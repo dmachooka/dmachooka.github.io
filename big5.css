@@ -1,0 +1,118 @@
+<style></style>
+<link href="big5.CSS" type="text/" rel="stylesheet">
+<link href="big5.css" rel="stylesheet" type="text/css" />
+<link href="main.css" rel="stylesheet" type="text/css">
+selector{
+	style: value;
+	style: value;
+}
+g class="cge-"{
+	color: red;
+}
+
+.g {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+h1{
+	color:red;
+	style:center;
+	background: beige;
+  border: 2px outset solid black;
+  padding: 2px;
+  margin: 2px;
+   padding-left: 5px solid gold;
+  padding-right: 5px solid yellow;
+  border-top: 6px dotted black;
+  border-bottom: 9px dashed green;
+}
+
+body {
+	background-color: pink;
+	
+	}
+
+p {
+  border: 1px solid powderblue;
+  margin: 20px;
+  style:#ffb3b3;
+  transition: opacity 80ms ease-in-out;
+ 
+ 
+}
+p:hover {
+  opacity: 0.7;
+}
+
+h3{
+	opacity:0.7;
+	font-size:14pt;
+	font-family:calibri;
+	text-anchor:middle;
+	style:center:underline;
+	line:stoke:#aaa;
+	opacity:0.7;
+	margin: 20px;
+	border: 1px solid powderblue;
+	 background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+	 transition: opacity 80ms ease-in-out;
+}
+.rect class="cr-" {
+	style="fill:#1e99e7;
+}
+
+g class={ 
+"tick" style="opacity: 1;
+
+}
+	
+body  font-family: Calibri;
+ line: ▪ stroke:#aaa; 
+ bar: ▪ fill:#1e99e7;
+ opacity: 0.7;
+ font-size:24pt;
+ font-weight:bold;
+ xlabel fill:#aaa; 
+ font-size:14pt;
+text-anchor:middle;
+ylabel font-size:25pt;
+fill:gray;
+font-weight:bold;
+text-anchor:end;
+
+.h3{ style:stroke;
+	
+}
+
+
+.classname{
+	style:value;
+}
+#id_name{
+	style:value;
+}
+p{
+	color:green;
+	text-align: right-justify;
+	text-anchor:end;
+}
+
+tag_name1,tag_name2{
+	style:value;
+}
+<style>
+g class="cge" {
+  background: white;
+  border: 2px solid blue;
+}
+g class="cge"{
+  background: yellow;
+  border: 1px solid black;
+  padding: 2px;
+  margin: 2px;
+}
+</style>
+
+<div>This is a <span>test</span> test only.</div
