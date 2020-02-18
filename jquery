@@ -1,1 +1,160 @@
-functionality
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+</script>
+</head>
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 15px;
+}
+
+/* Page Content */
+.content {padding:10px;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Jquery assighnment</h1>
+  <p>My jquery quest</p>
+</div>
+
+
+<h2>Using jquery to add responsiveness to pages click on icon below or hiver over them<p style="background-color:#ff0000">.</p></h2>
+
+
+<p style="background-color:#00ff00">.</p>
+<p style="background-color:#0000ff">.</p>
+
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script> 
+     
+        
+        
+        function addImg(name){
+            $("body").append("<span>");  //span:  all the jpg. set the size of the icons to 100px(w) x 100px(h)
+            $("span").append("<img id=" + name + ">");
+            $("#" + name).attr({"src": "images/" + name + ".jpg", "width": "100px", "height": "100px" });
+        }
+          function mouseleave(name){
+            $("span").append("<div id='div2'>");
+            $("#div2").html("Out: ");
+            $("#" + name).mouseleave(function(){
+                $(this).css("opacity", 100);
+                $("#div2").html("Out: " + name);
+            });
+        }
+		
+        function mousedown(name){
+            $("#" + name).mousedown(function(){
+                $(this).attr({ "width": "80px", "height": "80px" });
+                $(this).css({"border": "solid 3px indigo", "border-radius":"5px"});
+            });
+        }
+
+       
+        function mouseenter(name){
+            $("span").append("<div id='div1'>");  //opacity
+            $("#div1").html("In: ");
+            $("#" + name).mouseover(function(){
+                $(this).css("opacity", 0.5);
+                $("#div1").html("In: " + name);
+            });
+        }
+
+                
+        function dblclick(name){
+            $("#" + name).dblclick(function(){
+                window.open("https://www." + name + ".com");  //dblclick go to a new tab for its’ website
+            });
+        }
+
+        
+        function mousemove(name){
+            $("span").append("<div id='div3'>");
+            $("#div3").html("Mouse X: , Y:");   //mouse position
+            $("#" + name).mousemove(function(e){
+                let x = e.pageX;
+                let y = e.pageY;
+                $("#div3").html("Mouse X: " + x + ", Y: " + y );
+            });
+        }
+
+        
+        
+        function mouseup(name){
+            $("#" + name).mouseup(function(){
+                $(this).attr({ "width": "100px", "height": "100px" });
+                $(this).css("border", "none");
+            });
+        }
+
+        
+        $(document).ready(function(){
+            addImg("twitter");
+            addImg("facebook");
+            addImg("reddit");
+            addImg("linkedin");
+            addImg("instagram");
+
+            mouseenter("twitter");
+            mouseenter("facebook");
+            mouseenter("reddit");
+            mouseenter("linkedin");
+            mouseenter("instagram");
+
+            mouseleave("twitter");
+            mouseleave("facebook");
+            mouseleave("reddit");
+            mouseleave("linkedin");
+            mouseleave("instagram");
+
+            dblclick("twitter");
+            dblclick("facebook");
+            dblclick("reddit");
+            dblclick("linkedin");
+            dblclick("instagram");
+
+            mousemove("twitter");
+            mousemove("facebook");
+            mousemove("reddit");
+            mousemove("linkedin");
+            mousemove("instagram");
+
+            mousedown("twitter");
+            mousedown("facebook");
+            mousedown("reddit");
+            mousedown("linkedin");
+            mousedown("instagram");
+
+            mouseup("twitter");
+            mouseup("facebook");
+            mouseup("reddit");
+            mouseup("linkedin");
+            mouseup("instagram");
+        });
+    </script>
+</head>
+<body><style="background-color:linen">
+<p style="background-color:#ooffff">.</p>
+<p style="background-color:#87CEEB">.</p>
+<p style="background-color:##EE82EE">.</p>
+</body>
+</html>
